@@ -6,13 +6,11 @@ ADFS 2016 or higher
 Ensure both /usernamemixed endpoints are enabled.
 Connect Health for ADFS has to be installed
 
-## Steps to Install and Configure:
+## Steps to Install and Run
 
  - Extract contents of .zip file to anywhere on your ADFS server
  - Open Powershell or PowerShell ISE as AdminIn PowerShell, navigate to where you extracted the package. 
 
-
-## Steps to Install and Configure:
 Then run the following to import the module:
 
 **Import-Module .\Install-ADFSActivity.psm1**
@@ -32,6 +30,8 @@ Or you want to run this manually right now, run:
 **Start-ADFSServerToken**
 
 Regardless of whether you install the scheduled task or run it manually, the script will do a random number of authentication attempts (<500) against each app and even include a wrong password here or there to simulate real world activity. 
+
+## Steps to Run Manually
 
 If you need to ever run this manually in the future, just be sure to run this to import the module:
 
