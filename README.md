@@ -13,21 +13,21 @@ Connect Health for ADFS has to be installed
 
 Then run the following to import the module:
 
-**Import-Module .\Install-ADFSActivity.psm1**
+  **Import-Module .\Install-ADFSActivity.psm1**
 
 It will prompt you for a valid credentials (ones used to authenticate against the SaaS apps), and your base ADFS URL (sts.domain.com) so be sure to type those in correctly. It will save these to individual files in /config folder for future use including an encrypted version of the password. 
 
 Than run this to hydrate the ADFS server with the top 16 SaaS applications complete with issuance transform rules and access policies:       
 
-**Import-ADFSApplications**
+  **Import-ADFSApplications**
 
 If you want to create a scheduled task to run every night at 2 AM to simulate authentication traffic against your ADFS server, run the following:
 
-**New-ADFSServerTokenTask**
+  **New-ADFSServerTokenTask**
 
 Or you want to run this manually right now, run:
 
-**Start-ADFSServerToken**
+  **Start-ADFSServerToken**
 
 Regardless of whether you install the scheduled task or run it manually, the script will do a random number of authentication attempts (<500) against each app and even include a wrong password here or there to simulate real world activity. 
 
@@ -35,10 +35,10 @@ Regardless of whether you install the scheduled task or run it manually, the scr
 
 If you need to ever run this manually in the future, just be sure to run this to import the module:
 
-**Import-module .\ADFSActivity.psm1**
+  **Import-module .\ADFSActivity.psm1**
 
 And then run this function to invoke the application activity:
 
-**Start-ADFSServerToken**
+  **Start-ADFSServerToken**
 
 After 24 hours, you should see the applications show up in the ADFS Activity Report in the Azure portal with the login activity.
