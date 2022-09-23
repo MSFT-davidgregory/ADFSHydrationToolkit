@@ -1,12 +1,12 @@
 # ADFSHydrationToolkit
 Azure AD Connect Health hydration toolkist allows you to hydrate ADFS with 16 of the most popular SaaS applications and than generate activity to AD FS servers withou using the browser including a scheduled task.
 
-##Prerequisites:
+## Prerequisites:
 ADFS 2016 or higher
 Ensure both /usernamemixed endpoints are enabled.
 Connect Health for ADFS has to be installed
 
-##Steps to Install and Configure:
+## Steps to Install and Configure:
 
 Extract contents of .zip file to anywhere on your ADFS server
 Open Powershell or PowerShell ISE as AdminIn PowerShell, navigate to where you extracted the package. 
