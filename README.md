@@ -35,7 +35,8 @@ Regardless of whether you install the scheduled task or run it manually, the scr
 
 If you need to ever run this manually in the future, just be sure to run this to import the module:
 
-**Import-module .\ADFSActivity.psm1** 
+**Import-module .\ADFSActivity.psm1**
+
 **Start-ADFSServerToken**
 
 After 24 hours, you should see the applications show up in the ADFS Activity Report in the Azure portal with the login activity.
