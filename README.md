@@ -37,6 +37,8 @@ If you need to ever run this manually in the future, just be sure to run this to
 
 **Import-module .\ADFSActivity.psm1**
 
+And then run this function to invoke the application activity:
+
 **Start-ADFSServerToken**
 
 After 24 hours, you should see the applications show up in the ADFS Activity Report in the Azure portal with the login activity.
