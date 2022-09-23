@@ -47,4 +47,4 @@ After 24 hours, you should see the applications show up in the ADFS Activity Rep
 
 From there, you can click on the apps that show as "Additional Steps Required" to see what configuration is blocking them from being migrated to Azure AD:
 
-![ADFS Activity Report](https://github.com/MSFT-davidgregory/ADFSHydrationToolkit/blob/main/images/ActivityReport.png)
+![ADFS Activity Report](https://github.com/MSFT-davidgregory/ADFSHydrationToolkit/blob/main/images/AdditionalSteps.png)
