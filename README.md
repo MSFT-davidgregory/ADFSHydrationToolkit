@@ -8,9 +8,9 @@ Connect Health for ADFS has to be installed
 
 ## Steps to Install and Configure:
 
--Extract contents of .zip file to anywhere on your ADFS server
--Open Powershell or PowerShell ISE as AdminIn PowerShell, navigate to where you extracted the package. 
--Then run the following to import the module:
+ - Extract contents of .zip file to anywhere on your ADFS server
+ - Open Powershell or PowerShell ISE as AdminIn PowerShell, navigate to where you extracted the package. 
+ - Then run the following to import the module:
 
 **Import-Module .\Install-ADFSActivity.psm1**
 
