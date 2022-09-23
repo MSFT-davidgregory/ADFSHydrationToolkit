@@ -1,5 +1,5 @@
 # ADFS Hydration Toolkit
-Azure AD Connect Health hydration toolkit allows you to hydrate ADFS with 16 of the most popular SaaS applications and than generates authentication activity to those 16 applications to ensure they show up in the ADFS Activity Report in the Azure AD portal.
+The ADFS Hydration toolkit allows you to hydrate ADFS with 16 of the most popular SaaS applications and than generates authentication activity to those 16 applications to ensure they show up in the ADFS Activity Report in the Azure AD portal. This toolkit can be used to build demo's to showcase the value of Connect Health for ADFS for those customers that are interesting in migrating their applications from ADFS to Azure AD.
 
 ## Prerequisites:
  - ADFS 2016 or higher
