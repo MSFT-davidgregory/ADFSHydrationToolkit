@@ -19,7 +19,7 @@ It will prompt you for a valid credentials (ones used to authenticate against th
 
 Than run this to hydrate the ADFS server with the top 16 SaaS applications complete with issuance transform rules and access policies:       
 
-  **Import-ADFSApplications**
+  `Import-ADFSApplications`
 
 If you want to create a scheduled task to run every night at 2 AM to simulate authentication traffic against your ADFS server, run the following:
 
