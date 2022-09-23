@@ -43,4 +43,4 @@ And then run this function to invoke the application activity:
 
 After 24 hours, you should see the applications show up in the ADFS Activity Report in the Azure portal with the login activity like so:
 
-[ADFS Activity Report](/images/activityreport.png "ADFS Activity Report")
+[ADFS Activity Report](https://github.com/MSFT-davidgregory/ADFSHydrationToolkit/blob/main/images/ActivityReport.png "ADFS Activity Report")
