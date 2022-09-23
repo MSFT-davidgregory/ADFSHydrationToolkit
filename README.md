@@ -4,7 +4,7 @@ Azure AD Connect Health hydration toolkist allows you to hydrate ADFS with 16 of
 ## Prerequisites:
  - ADFS 2016 or higher
  - Ensure both /13/usernamemixed and /2005/usernamemixed endpoints are enabled.
- - Connect Health for ADFS has to be installed
+ - Connect Health for ADFS has to be installed on all ADFS servers.
 
 ## Steps to Install and Run
 
