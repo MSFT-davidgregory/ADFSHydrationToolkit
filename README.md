@@ -29,7 +29,7 @@ Or you want to run this manually right now, run:
 
   **Start-ADFSServerToken**
 
-Regardless of whether you install the scheduled task or run it manually, the script will do a random number of authentication attempts (<500) against each app and even include a wrong password here or there to simulate real world activity. 
+Regardless of whether you install the scheduled task or run it manually, the script will do a random number of authentication attempts (<500) against each app and even include a wrong password 50% of the time to simulate real world activity. 
 
 ## Steps to Run Manually
 
