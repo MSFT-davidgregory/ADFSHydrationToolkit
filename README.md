@@ -1,5 +1,5 @@
 # ADFS Hydration Toolkit
-The ADFS Hydration toolkit allows you to hydrate ADFS with 16 of the most popular SaaS applications and than generates authentication activity to those 16 applications to ensure they show up in the ADFS Activity Report in the Azure AD portal. This toolkit can be used to build demo's to showcase the value of Connect Health for ADFS for those customers that are interesting in migrating their applications from ADFS to Azure AD.
+The ADFS Hydration toolkit allows you to hydrate ADFS with 16 of the most popular SaaS applications and than generates authentication activity to those 16 applications to ensure they show up in the ADFS Activity Report in the Azure AD portal. This toolkit can be used to build demo environments to showcase the value of Connect Health for ADFS for those customers that are interested in migrating their applications from ADFS to Azure AD.
 
 ## Prerequisites:
  - ADFS 2016 or higher
@@ -7,17 +7,17 @@ The ADFS Hydration toolkit allows you to hydrate ADFS with 16 of the most popula
  - Connect Health for ADFS has to be installed on all ADFS servers.
 
 ## Steps to Install and Run
-
  - Extract contents of .zip file to anywhere on your ADFS server
- - Open Powershell or PowerShell ISE as AdminIn PowerShell, navigate to where you extracted the package. 
+ - Open Powershell or PowerShell ISE as Admin. 
+ - In PowerShell, navigate to where you extracted the package.
 
 Then run the following to import the module:
 
 `Import-Module .\Install-ADFSActivity.psm1`
 
-It will prompt you for a valid credentials (ones used to authenticate against the SaaS apps), and your base ADFS URL (sts.domain.com) so be sure to type those in correctly. It will save these to individual files in /config folder for future use including an encrypted version of the password. 
+It will prompt you for a valid credentials (ones used to authenticate against the SaaS apps), and your base ADFS URL (sts.domain.com) so be sure to type those in correctly. It will save these to individual files in /config folder for future use including an encrypted version of the password.
 
-Than run this to hydrate the ADFS server with the top 16 SaaS applications complete with issuance transform rules and access policies:       
+Then run this to hydrate the ADFS server with the top 16 SaaS applications complete with issuance transform rules and access policies:
 
   `Import-ADFSApplications`
 
@@ -29,11 +29,11 @@ Or you want to run this manually right now, run:
 
  `Start-ADFSServerToken`
 
-Regardless of whether you install the scheduled task or run it manually, the script will do a random number of authentication attempts (<500) against each app and even include a wrong password 50% of the time to simulate real world activity. 
+Regardless of whether you install the scheduled task or run it manually, the script will do a random number of authentication attempts (<500) against each app and even include a wrong password 50% of the time to simulate real world activity.
 
 ## Steps to Run Manually
 
-If you need to ever run this manually in the future, just be sure to run this to import the module:
+If you ever need to run this manually in the future, just be sure to import the module:
 
 `Import-module .\ADFSActivity.psm1`
 
